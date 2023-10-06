@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVJ Infotech Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><u> User's Details</u></h1>
+
+    <!-- Button to Create New User -->
+    <button id="createUserButton" class="btn-create">Create New User</button>
+
+    <!-- User List Table -->
+    <table id="userTable" align="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div id="pagination" class="center"></div>
+
+    <!-- User Detail/Edit Form Modal -->
+    <div id="userFormModal" class="modal">
+        <!-- Content for user creation/edit form goes here -->
+    </div>
+
+    <script src="script.js"></script>
+    <p>
+        <h4> PLEASE READ:</h4>
+        <h5>Your project "html-assignment" by Ronak Jangir is said that: Request methods 
+        PUT, POST, PATCH, DELETE needs access token, which needs to be passed with "Authorization" 
+        header as Bearer token. So, I have easily accessed the user data from API through GET request method,
+        but to perform the other request methods in my project I need permission from rvjinfotech/html-assignment.git,
+        so I called the command to authenticate the access token but it denied to me.
+        <pre>It says:  "$ git push -u origin main
+        remote: Permission to rvjinfotech/html-assignment.git denied to Harshvardhan149.
+        fatal: unable to access 'https://github.com/rvjinfotech/html-assignment.git/': The requested URL returned error: 403"</pre>
+        Because of this I cannot perform the action (view, edit, delete) and create a new user.
+        But I guarantee, if you give me authentication then I definately perform the actions by using the 
+        request methods.
+        </h5>
+    </p>
+</body>
+</html>
